@@ -47,6 +47,8 @@ namespace Abp.Taxi.EntityFrameworkCore.Configs
             {
                 b.ToTable(TaxiConsts.DbTablePrefix + "Bookings", TaxiConsts.DbSchema);
                 b.ConfigureByConvention();
+
+                b.Property(b => b.Price).HasPrecision(8, 2);
             });
         }
     }
