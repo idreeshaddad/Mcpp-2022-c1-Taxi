@@ -15,6 +15,14 @@ function configureRoutes(routesService: RoutesService) {
         order: 1,
         layout: eLayoutType.application,
       },
+      {
+        path: '/passengers',
+        name: '::Menu:Passengers',
+        iconClass: 'fas fa-wheelchair',
+        order: 2,
+        layout: eLayoutType.application,
+        requiredPolicy: 'Taxi.Passengers',
+      }
     ]);
   };
 }

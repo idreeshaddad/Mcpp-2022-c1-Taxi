@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="card-header">
+    <div class="row">
+      <div class="col col-md-6">
+        <h5 class="card-title">
+          {{ '::Menu:Passengers' | abpLocalization }}
+        </h5>
+      </div>
+      <div class="text-end col col-md-6"></div>
+    </div>
+  </div>
+  <div class="card-body">
+    <ngx-datatable [rows]="passenger.items" [count]="passenger.totalCount" [list]="list" default>
+
+      <ngx-datatable-column [name]="'::FullName' | abpLocalization" prop="fullName"></ngx-datatable-column>
+      <ngx-datatable-column [name]="'::PhoneNumber' | abpLocalization" prop="phoneNumber"></ngx-datatable-column>
+
+      <ngx-datatable-column [name]="'::Actions' | abpLocalization">
+
+        <ng-template let-row="row" ngx-datatable-cell-template>
+
+          <a class="text-primary pointer" title="{{ '::Edit' | abpLocalization }}">
+            <i class="fas fa-pen"></i>
+          </a>
+
+          <a class="text-danger pointer ms-2" (click)="delete(row)" title="{{ '::Delete' | abpLocalization }}">
+            <i class="fas fa-trash"></i>
+          </a>
+
+        </ng-template>
+
+      </ngx-datatable-column>
+
+    </ngx-datatable>
+  </div>
+</div>

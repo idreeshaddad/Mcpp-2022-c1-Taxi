@@ -6,7 +6,9 @@ namespace Abp.Taxi.Passengers
     {
         public PassengerAutoMapperProfile()
         {
-            CreateMap<Passenger, PassengerDto>().ReverseMap();
+            CreateMap<Passenger, PassengerDto>();
+            CreateMap<Passenger, PassengerDetailsDto>();
+            CreateMap<CreateUpdatePassengerDto, Passenger>();
         }
     }
 }

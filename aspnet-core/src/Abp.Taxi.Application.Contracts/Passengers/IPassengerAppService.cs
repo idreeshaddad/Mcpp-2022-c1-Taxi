@@ -5,9 +5,12 @@ namespace Abp.Taxi.Passengers
 {
     public interface IPassengerAppService : 
         ICrudAppService<
+            PassengerDetailsDto,
             PassengerDto,
             int,
-            PagedAndSortedResultRequestDto>
+            PagedAndSortedResultRequestDto,
+            CreateUpdatePassengerDto,
+            CreateUpdatePassengerDto>
     {
     }
 }

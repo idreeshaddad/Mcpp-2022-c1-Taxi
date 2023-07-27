@@ -5,8 +5,17 @@
     "Welcome": "Welcome",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
     "Permission:Passengers": "Passengers",
+    "Menu:Passengers": "Passengers",
     "Permission:Passengers.Create": "Create Passenger",
     "Permission:Passengers.Edit": "Edit Passenger",
-    "Permission:Passengers.Delete": "Delete Passenger"
+    "Permission:Passengers.Delete": "Delete Passenger",
+    "FullName": "Full Name",
+    "PhoneNumber": "Phone Number",
+    "Actions": "Actions",
+    "Delete": "Delete",
+    "Create": "Create",
+    "Edit": "Edit",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete {0}?"
   }
 }

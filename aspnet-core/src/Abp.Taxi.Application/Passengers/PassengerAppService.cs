@@ -6,7 +6,14 @@ using Volo.Abp.Domain.Repositories;
 namespace Abp.Taxi.Passengers
 {
     public class PassengerAppService :
-        CrudAppService<Passenger, PassengerDto, int, PagedAndSortedResultRequestDto>,
+        CrudAppService<
+            Passenger,
+            PassengerDetailsDto,
+            PassengerDto,
+            int,
+            PagedAndSortedResultRequestDto,
+            CreateUpdatePassengerDto,
+            CreateUpdatePassengerDto>,
         IPassengerAppService
     {
         public PassengerAppService(IRepository<Passenger, int> passengerRepository)
