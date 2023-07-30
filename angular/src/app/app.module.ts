@@ -5,7 +5,7 @@ import { IdentityConfigModule } from '@abp/ng.identity/config';
 import { SettingManagementConfigModule } from '@abp/ng.setting-management/config';
 import { TenantManagementConfigModule } from '@abp/ng.tenant-management/config';
 import { ThemeLeptonXModule } from '@abp/ng.theme.lepton-x';
-import { SideMenuLayoutModule } from '@abp/ng.theme.lepton-x/layouts';
+import { LPX_NAVBAR_ITEMS_PROVIDER, SideMenuLayoutModule } from '@abp/ng.theme.lepton-x/layouts';
 import { ThemeSharedModule } from '@abp/ng.theme.shared';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -40,4 +40,4 @@ import { AbpOAuthModule } from '@abp/ng.oauth';
   providers: [APP_ROUTE_PROVIDER],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

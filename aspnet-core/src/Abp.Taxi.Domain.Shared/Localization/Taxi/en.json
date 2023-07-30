@@ -16,6 +16,7 @@
     "Create": "Create",
     "Edit": "Edit",
     "AreYouSure": "Are you sure?",
-    "AreYouSureToDelete": "Are you sure you want to delete {0}?"
+    "AreYouSureToDelete": "Are you sure you want to delete {0} with phone Number: {1}?",
+    "NewPassenger": "New Passenger"
   }
 }

@@ -30,7 +30,8 @@ export class PassengerComponent implements OnInit {
 
     const deleteMsg = this.localizationService.instant(
       '::AreYouSureToDelete',
-      passenger.fullName
+      passenger.fullName,
+      passenger.phoneNumber
     );
 
     this.confirmation.warn(deleteMsg, '::AreYouSure').subscribe((status) => {

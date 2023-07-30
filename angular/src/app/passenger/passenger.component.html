@@ -6,7 +6,17 @@
           {{ '::Menu:Passengers' | abpLocalization }}
         </h5>
       </div>
-      <div class="text-end col col-md-6"></div>
+      <div class="text-end col col-md-6">
+
+        <div class="text-lg-end pt-2">
+          <button *abpPermission="'Taxi.Passengers.Create'" id="create" class="btn btn-primary" type="button"
+            [routerLink]="['create']">
+            <i class="fa fa-plus me-1"></i>
+            <span>{{ "::NewPassenger" | abpLocalization }}</span>
+          </button>
+        </div>
+
+      </div>
     </div>
   </div>
   <div class="card-body">
