@@ -22,18 +22,25 @@
   <div class="card-body">
     <ngx-datatable [rows]="passenger.items" [count]="passenger.totalCount" [list]="list" default>
 
-      <ngx-datatable-column [name]="'::FullName' | abpLocalization" prop="fullName"></ngx-datatable-column>
-      <ngx-datatable-column [name]="'::PhoneNumber' | abpLocalization" prop="phoneNumber"></ngx-datatable-column>
+      <ngx-datatable-column [name]="'::FULL_NAME' | abpLocalization" prop="fullName"></ngx-datatable-column>
+      <ngx-datatable-column [name]="'::PHONE_NUMBER' | abpLocalization" prop="phoneNumber"></ngx-datatable-column>
 
       <ngx-datatable-column [name]="'::Actions' | abpLocalization">
 
         <ng-template let-row="row" ngx-datatable-cell-template>
 
-          <a class="text-primary pointer" [routerLink]="['edit', row.id]" title="{{ '::Edit' | abpLocalization }}">
+          <a class="text-primary pointer" *abpPermission="'Taxi.Passengers.Edit'" [routerLink]="['edit', row.id]"
+            title="{{ '::EDIT' | abpLocalization }}">
             <i class="fas fa-pen"></i>
           </a>
 
-          <a class="text-danger pointer ms-2" (click)="delete(row)" title="{{ '::Delete' | abpLocalization }}">
+          <a class="text-info pointer ms-2" [routerLink]="['details', row.id]"
+            title="{{ '::Details' | abpLocalization }}">
+            <i class="fas fa-info-circle"></i>
+          </a>
+
+          <a class="text-danger pointer ms-2" *abpPermission="'Taxi.Passengers.Delete'" (click)="delete(row)"
+            title="{{ '::Delete' | abpLocalization }}">
             <i class="fas fa-trash"></i>
           </a>
 

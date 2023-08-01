@@ -9,14 +9,17 @@
     "Permission:Passengers.Create": "Create Passenger",
     "Permission:Passengers.Edit": "Edit Passenger",
     "Permission:Passengers.Delete": "Delete Passenger",
-    "FullName": "Full Name",
-    "PhoneNumber": "Phone Number",
+    "FULL_NAME": "Full Name",
+    "PHONE_NUMBER": "Phone Number",
     "Actions": "Actions",
     "Delete": "Delete",
     "Create": "Create",
-    "Edit": "Edit",
+    "EDIT": "Edit",
     "AreYouSure": "Are you sure?",
     "AreYouSureToDelete": "Are you sure you want to delete {0} with phone Number: {1}?",
-    "NewPassenger": "New Passenger"
+    "NewPassenger": "New Passenger",
+    "PASSENGER_DETAILS": "Passenger Details",
+    "BACK": "Back",
+    "BOOKING_HISTORY": "Booking History"
   }
 }
