@@ -12,16 +12,25 @@ function configureRoutes(routesService: RoutesService) {
         path: '/',
         name: '::Menu:Home',
         iconClass: 'fas fa-home',
-        order: 1,
+        order: 10,
         layout: eLayoutType.application,
       },
       {
         path: '/passengers',
         name: '::Menu:Passengers',
         iconClass: 'fas fa-wheelchair',
-        order: 2,
+        order: 20,
         layout: eLayoutType.application,
         requiredPolicy: 'Taxi.Passengers',
+      },
+      ,
+      {
+        path: '/manufacturers',
+        name: '::Menu:Manufacturers',
+        iconClass: 'fas fa-industry',
+        order: 30,
+        layout: eLayoutType.application,
+        requiredPolicy: 'Taxi.Manufacturers',
       }
     ]);
   };

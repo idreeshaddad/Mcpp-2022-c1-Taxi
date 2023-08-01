@@ -20,6 +20,11 @@
     "NewPassenger": "New Passenger",
     "PASSENGER_DETAILS": "Passenger Details",
     "BACK": "Back",
-    "BOOKING_HISTORY": "Booking History"
+    "BOOKING_HISTORY": "Booking History",
+    "Permission:Manufacturers": "Manufacturers",
+    "Menu:Manufacturers": "Manufacturers",
+    "Permission:Manufacturers.Create": "Create Manufacturer",
+    "Permission:Manufacturers.Edit": "Edit Manufacturer",
+    "Permission:Manufacturers.Delete": "Delete Manufacturer"
   }
 }

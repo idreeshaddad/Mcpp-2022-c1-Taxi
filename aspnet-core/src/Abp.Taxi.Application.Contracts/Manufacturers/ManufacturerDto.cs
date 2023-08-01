@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.Application.Dtos;
 
-namespace Abp.Taxi.Manufacturer
+namespace Abp.Taxi.Manufacturers
 {
     public class ManufacturerDto : EntityDto<int>
     {
