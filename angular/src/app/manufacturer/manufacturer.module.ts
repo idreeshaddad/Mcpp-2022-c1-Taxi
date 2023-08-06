@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 import { ManufacturerRoutingModule } from './manufacturer-routing.module';
 import { ManufacturerComponent } from './manufacturer.component';
+import { SharedModule } from '../shared/shared.module';
+import { ManufacturerDetailsComponent } from './manufacturer-details/manufacturer-details.component';
+import { CreateUpdateManufacturerComponent } from './create-update-manufacturer/create-update-manufacturer.component';
 
 
 @NgModule({
   declarations: [
-    ManufacturerComponent
+    ManufacturerComponent,
+    ManufacturerDetailsComponent,
+    CreateUpdateManufacturerComponent
   ],
   imports: [
-    CommonModule,
+    SharedModule,
     ManufacturerRoutingModule
   ]
 })

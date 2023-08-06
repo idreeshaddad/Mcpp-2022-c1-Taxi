@@ -16,7 +16,7 @@
     "Create": "Create",
     "EDIT": "Edit",
     "AreYouSure": "Are you sure?",
-    "AreYouSureToDelete": "Are you sure you want to delete {0} with phone Number: {1}?",
+    "AreYouSureToDeletePassenger": "Are you sure you want to delete {0} with phone Number: {1}?",
     "NewPassenger": "New Passenger",
     "PASSENGER_DETAILS": "Passenger Details",
     "BACK": "Back",
@@ -25,6 +25,12 @@
     "Menu:Manufacturers": "Manufacturers",
     "Permission:Manufacturers.Create": "Create Manufacturer",
     "Permission:Manufacturers.Edit": "Edit Manufacturer",
-    "Permission:Manufacturers.Delete": "Delete Manufacturer"
+    "Permission:Manufacturers.Delete": "Delete Manufacturer",
+    "AreYouSureToDeleteManufacturer": "Are you sure you want to delete {0} manufacturer?",
+    "NewManufacturer": "New Manufacturer",
+    "MANUFACTURER_DETAILS": "Manufacturer Details",
+    "Id": "Id",
+    "CARS": "Cars",
+    "SAVE": "Save"
   }
 }

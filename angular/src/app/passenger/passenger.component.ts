@@ -29,7 +29,7 @@ export class PassengerComponent implements OnInit {
   delete(passenger: PassengerDto) {
 
     const deleteMsg = this.localizationService.instant(
-      '::AreYouSureToDelete',
+      '::AreYouSureToDeletePassenger',
       passenger.fullName,
       passenger.phoneNumber
     );
